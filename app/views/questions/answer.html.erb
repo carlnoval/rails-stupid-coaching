@@ -1,0 +1,14 @@
+<div class="conversation-container">
+  <div class="message-container" id="mine">
+    <p><%= params[:question] %></p>
+    <p>-My message</p>
+  </div>
+  <div class="message-container" id="coach">
+    <p><%= @coach_reply %></p>
+    <p>-Coach's message</p>
+  </div>
+</div>
+
+<ul style="list-style: none; padding: 0">
+ <li><%= link_to "Ask a new question", ask_path %></li>
+</ul>
