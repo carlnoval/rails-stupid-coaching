@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is my first rails app.
 
-Things you may want to cover:
+Summary:
+- If the message is I am going to work, the coach will answer Great!
+- If the message has a question mark ? at the end, the coach will answer Silly question, get dressed and go to work!.
+- Otherwise the coach will answer I don't care, get dressed and go to work!
 
-* Ruby version
+* Rails version: 6.1.4.4
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Ruby version: ruby 2.7.4p191 (2021-07-07 revision a21a3b7d23) [x86_64-darwin20]
