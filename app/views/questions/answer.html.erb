@@ -1,14 +1,16 @@
-<div class="conversation-container">
+<%# placed things in a container to take advantage of display flex %>
+<div class="container">
   <div class="message-container" id="mine">
     <p><%= params[:question] %></p>
     <p>-My message</p>
   </div>
   <div class="message-container" id="coach">
-    <p><%= @coach_reply %></p>
+    <p class="coach-message"><%= @coach_reply %></p>
     <p>-Coach's message</p>
   </div>
+  <ul>
+    <li><%= link_to "Ask a new question", ask_path %></li>
+  </ul>
 </div>
 
-<ul style="list-style: none; padding: 0">
- <li><%= link_to "Ask a new question", ask_path %></li>
-</ul>
+

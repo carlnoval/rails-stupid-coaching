@@ -1,4 +1,9 @@
-<form action="answer">
-  <input type="text" name="question" value="<%= params[:question] %>">
-  <input type="submit" value="Ask!">
-</form>
+<div class="form-container">
+  <form action="answer">
+    <label for="name">Ask your Coach anything:</label>
+    <div class="input-and-submit">
+      <input type="text" name="question" value="<%= params[:question] %>" placeholder="Is this a sample question?">
+      <input type="submit" value="Ask!" class="btn">
+    </div>
+  </form>
+</div>
