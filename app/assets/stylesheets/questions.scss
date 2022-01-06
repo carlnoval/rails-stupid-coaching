@@ -79,7 +79,8 @@ ul {
   .input-and-submit {
     margin-top: .5rem;
     display: flex;
-    width: 480px;
+    min-width: 400px;
+    max-width: 640px;
 
     [type='text'],
     select,
@@ -96,6 +97,13 @@ ul {
 
       &::placeholder {
         color: rgb(205, 205, 205);
+      }
+
+      // the default focus sucks
+      // for some reason :focus in not in mdn
+      &:focus{
+        outline: none;
+        box-shadow: 0 0 .5rem rgb(76, 155, 187);
       }
     }
 
